@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Ganesh Poudel</h1>
 <p align="center" width="100%">
-   <img src="6170186.png" width="200" height="200" />
+   <img src="./src/Assets/avatar.png" width="200" height="200" />
 </p>
 <p align="center">A highly motivated, efficient software developer with hands-on experience in Salesforce Cloud, Apex, and Lightning Web Component. Proven ability to collaborate and contribute to teams varying in size and scope. Passionate about learning and working on different software tools and technologies.</p>
 
