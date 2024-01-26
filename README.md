@@ -6,7 +6,7 @@
 <br/>
 This is a simple e-commerce website build with HTML & SCSS.
 
-[View website](https://github.com/ganesh-poudel/fs17-week1)
+[View website](https://glowing-zabaione-3198dd.netlify.app)
 
 ### Table of content
 
