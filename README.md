@@ -1,33 +1,40 @@
-# Week 1 Assignment
+## Introduction
 
-This assignment aims to practice HTML, CSS and SASS
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+<br/>
+This is a simple e-commerce website build with HTML & SCSS.
 
-## Requirement
+[View website](https://github.com/ganesh-poudel/fs17-week1)
 
-Create an e-commerce website
+### Table of content
 
-1. Git/GitHub
+- [Technologies](#technologies)
+- [Project Structure](#project-strucutre)
+- [Getting started](#getting-started)
 
-- create a simple `README` file to introduce yourself
-- submit the assignment by open a pull request (PR)
-- make the repository public
-- add label to your PR
+- [Github Page](#github-page)
+- [References](#refrence)
 
-2. HTML and Accessibility
+### <a name = "technologies"></a>Technologies
 
-- Make use of different tags: headings, paragraphs, link, italic, ordered list, unordered list,table, form
-- Check out more tags that might be helpful: address, section, article, audio
+-HTML
+-SCSS
+-GRIDBOX
+-FLEXBOX
+-ANIMATION
 
-3. CSS
+### <a name = "project-strucutre"></a>Project Structure
 
-- add styling to the HTML file using Flexbox and Grid
-- add basic animation (hover effect, active link styles, typing effect)
-- the web page does not need to be fully responsive, but at least you should have responsive scaling for Flexbox and Grid system.
+```
 
-4. SASS
+```
 
-- apply SAAS to current project. Make sure to at least use variables and mixins
+### <a name = "github-page"></a>Github Page
 
-5. Other
-   - Deploy the project
-   - Write a readme file to describe your project with few more details
+[View Page](https://github.com/ganesh-poudel/fs17-week1)
+
+### <a name = "refrence"></a>Reference
+
+Clone the repository from github: [w3schools](https://sass-lang.com)

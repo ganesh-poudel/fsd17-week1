@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+  background: linear-gradient(180deg, #3b0440, #cad2cc22 60%);
+  cursor: pointer;
+  transition-duration: 1s;
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
+  &__description {
+    align-items: center;
+  }
+  &__img {
+    width: 25rem;
+  }
+  &__price {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+ 
+}

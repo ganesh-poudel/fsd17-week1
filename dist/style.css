@@ -1,0 +1,350 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.btn {
+  width: 9rem;
+  height: 2.5rem;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  cursor: pointer;
+  background: none;
+}
+.btn--login {
+  background: rgb(225, 215, 215);
+}
+.btn--hero {
+  background: red;
+  width: 19.375rem;
+  height: 4.375rem;
+  border-radius: 75px;
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.btn--suscribe {
+  width: 210px;
+  height: 70px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:active, .btn:hover {
+  background-color: green;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  color: rgb(46, 31, 31);
+}
+.menu-list--navbar {
+  gap: 4rem;
+  font-size: 19px;
+}
+.menu-list__item {
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.menu-list--footerbar {
+  gap: 7rem;
+  font-size: 17px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 400px;
+  background: linear-gradient(180deg, #3b0440, rgba(202, 210, 204, 0.1333333333) 60%);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.product-card:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.product-card__description {
+  align-items: center;
+}
+.product-card__img {
+  width: 25rem;
+}
+.product-card__price {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.search__label {
+  display: none;
+}
+.search__input {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  max-height: 4em;
+  height: 3em;
+  border-radius: 10px;
+  background-color: rgb(154, 247, 149);
+}
+.search__input--newsletter {
+  background: none;
+  border: none;
+}
+.search__input--nav {
+  font-size: 16px;
+}
+
+.product-display-header {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(130deg, #5baa96, rgba(225, 255, 234, 0.1333333333) 80%);
+  height: 7rem;
+}
+.navbar__right-section {
+  display: flex;
+  padding-left: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: blue;
+  padding-top: 2rem;
+  height: 30rem;
+  margin: auto;
+  background: linear-gradient(180deg, #a45baa, rgba(225, 255, 234, 0.1333333333) 60%);
+}
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero__image {
+  width: 25rem;
+}
+.hero__quotes-text {
+  color: #171717;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.hero__typewriter-text {
+  font-family: monospace;
+  color: #180c0c;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(14, 15, 37);
+  }
+}
+.women-popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.women-popular__item {
+  display: flex;
+  gap: 2rem;
+}
+
+.new-collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.new-collection__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.subscribe-newsletter {
+  width: 65%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0px 140px;
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fde1ff, rgba(225, 255, 234, 0.1333333333) 60%);
+  gap: 30px;
+}
+.subscribe-newsletter__input-subscribe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  width: 730px;
+  height: 70px;
+  border-radius: 80px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+}/*# sourceMappingURL=style.css.map */

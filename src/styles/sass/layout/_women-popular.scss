@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+.women-popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  &__item {
+    display: flex;
+    gap: 2rem;
+  }
+ 
+}

@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  color: $menu-color;
+  &--navbar {
+    gap: 4rem;
+    font-size: 19px;
+  }
+  &__item {
+    cursor: pointer;
+    transition-duration: 1s;
+  }
+  &--footerbar {
+  gap: 7rem;
+  font-size: 17px;
+}
+}

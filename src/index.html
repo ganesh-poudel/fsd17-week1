@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../dist/style.css" />
     <title>E-commerce</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header-navbar">
       <!-- navbar -->
       <nav class="navbar navbar--homepage">
         <div class="logo">
-          <img class="logo__image" src="./Assets/logo.png" alt="" />
+          <img class="logo__image" src="./Assets/logo.png" alt="logo" />
           <p class="logo__text">SHOPPER</p>
         </div>
         <div class="navbar__category-menu">
@@ -25,8 +25,9 @@
           </ul>
         </div>
         <div class="navbar__right-section">
-          <div class="navbar__product-search">
-            <input class="navbar__item-search" type="text" placeholder="Search.." />
+          <div class="search">
+            <label for="searchInput" class="search__label">Search Products</label>
+            <input id="searchInput" class="search__input search__input--nav" type="text" placeholder="Search.." />
           </div>
           <button class="btn btn--login">Login</button>
           <div class="navbar__product-cart">
@@ -59,7 +60,7 @@
       <section>
         <!-- Women popular section -->
         <div class="women-popular">
-          <h1 class="women-popular__heading">POPULAR IN WOMEN</h1>
+          <h1 class="product-display-header">POPULAR IN WOMEN</h1>
           <div class="women-popular__item">
             <div class="product-card">
               <img class="product-card__img" src="./Assets/product_1.png" alt="" />
@@ -87,13 +88,15 @@
       <section>
         <!-- New collection section -->
         <div class="new-collection">
-          <h1 class="new-collection__heading">NEW COLLECTIONS</h1>
+          <h1 class="product-display-header">NEW COLLECTIONS</h1>
           <div class="new-collection__item">
-            <div class="product-card">
-              <img class="product-card__img" src="./Assets/product_7.png" alt="" />
-              <p class="product-card__description">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
-              <p class="product-card__price">85€</p>
-            </div>
+            <article class="product-card-wrapper">
+              <div class="product-card">
+                <img class="product-card__img" src="./Assets/product_7.png" alt="" />
+                <p class="product-card__description">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
+                <p class="product-card__price">85€</p>
+              </div>
+            </article>
             <div class="product-card">
               <img class="product-card__img" src="./Assets/product_8.png" alt="" />
               <p class="product-card__description">Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse</p>
@@ -135,11 +138,19 @@
       <section>
         <!-- subscribe newsletter -->
         <div class="subscribe-newsletter">
-          <h2 class="subscribe-newsletter__header">Get Exclusive Offers On</h2>
+          <h2 class="product-display-header">Get Exclusive Offers On</h2>
           <h2 class="subscribe-newsletter__header">Your Email</h2>
           <p class="subscribe-newsletter__content">Subscribe to our newsletter and stay updated.</p>
           <div class="subscribe-newsletter__input-subscribe-wrapper">
-            <input class="subscribe-newsletter__email-input" type="text" placeholder="Your Email Id" />
+            <div class="search">
+              <label for="email" class="search__label">Your Email Id</label>
+              <input
+                id="email"
+                class="search__input search__input--newsletter"
+                type="email"
+                placeholder="Your Email Id"
+              />
+            </div>
             <button class="btn btn--suscribe">Subscribe</button>
           </div>
         </div>
@@ -151,21 +162,23 @@
         <img class="logo__image" src="./Assets/logo.png" alt="" />
         <p class="logo__text">SHOPPER</p>
       </div>
-      <div class="footer__menu">
+      <nav class="footer__menu">
         <ul class="menu-list menu-list--footerbar">
           <li class="menu-list__item">Company</li>
           <li class="menu-list__item">Products</li>
           <li class="menu-list__item">Offices</li>
           <li class="menu-list__item">About</li>
         </ul>
-      </div>
-      <address class="footer__address">
+      </nav>
+      <span class="footer__address">
         Contact at <a href="mailto:webmaster@example.com">Ecommerce</a>.<br />
-        Visit us at:<br />
-        Example.com<br />
-        Box 564, Vantaa<br />
-        Finland
-      </address>
+        <span class="footer__visit-label"
+          >Visit us at<br />
+          Example.com<br />
+          Box 564, Vantaa<br />
+          Finland
+        </span>
+      </span>
       <h5 class="footer__copyright">Copyright @ 2023 - All Right Reserved.</h5>
     </footer>
   </body>

@@ -105,6 +105,8 @@
   margin-bottom: 10rem;
 }
 
+
+
 /* Element */
 .navbar__right-section {
   display: flex;
@@ -164,14 +166,15 @@
   border: 1px solid #e3e3e3;
 }
 
-.subscribe-newsletter__email-input {
-  width: 500px;
-  margin-left: 30px;
-  border: none;
-  outline: none;
-  color: #616161;
-  font-family: poppins;
-  font-size: 16px;
+.subscribe-newsletter__input-subscribe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 730px;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #e3e3e3;
 }
 
 /* modifier */
