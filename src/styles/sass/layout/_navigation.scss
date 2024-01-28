@@ -1,11 +1,16 @@
 @use "../components/" as *;
-
+@use "../abstracts/" as *;
 .navbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background: linear-gradient(130deg, #5baa96, #e1ffea22 80%);
   height: 7rem;
+     @include responsive($small-screen) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2rem;
+    }
   &__right-section {
     display: flex;
     padding-left: 3rem;

@@ -9,6 +9,11 @@
   &__item {
     display: flex;
     gap: 2rem;
+    @include responsive($small-screen) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+    }
   }
- 
 }

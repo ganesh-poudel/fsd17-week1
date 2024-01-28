@@ -2,11 +2,12 @@
 
 .hero {
   display: flex;
+  flex-flow: nowrap;
   justify-content: space-around;
   align-items: center;
   background: $primary-color;
   padding-top: $font-size-secondary;
-  height: 30rem;
+  min-height: 100vh;
   margin: auto;
   background: linear-gradient(180deg, #a45baa, #e1ffea22 60%);
   &__left {

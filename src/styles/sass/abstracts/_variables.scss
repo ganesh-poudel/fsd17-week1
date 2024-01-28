@@ -2,6 +2,8 @@
 $primary-color: blue;
 $secondary-color: rgb(154, 247, 149);
 $btn-login-color: rgb(225, 215, 215);
+$btn-active-color:green;
+$btn-subscribe-color: rgb(0, 0, 0);
 $danger-color: red;
 $info-color: yellow;
 $menu-color: rgb(46, 31, 31);
@@ -9,5 +11,11 @@ $menu-color: rgb(46, 31, 31);
 // fonts
 $font-size-primary: 1rem;
 $font-size-secondary: 2rem;
+
+// screens
+$small-screen: 570px;
+$medium-screen:760px;
+$large-screen: 990px;
+
 
 

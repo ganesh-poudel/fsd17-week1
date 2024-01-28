@@ -1,41 +1,21 @@
 @use "../abstracts" as *;
 
 .btn {
-  width: 9rem;
-  height: 2.5rem;
-  outline: none;
-  border: 1px solid #7a7a7a;
-  border-radius: 75px;
-  color: #515151;
-  font-size: 1rem;
-  font-weight: 500;
-  background: none;
-  cursor: pointer;
-  background: none;
   &--login {
-    background: $btn-login-color;
+    @include btn-style(45px, 100px, $btn-login-color);
+    @include responsive($small-screen) {
+      color: red;
+    }
   }
   &--hero {
-    background: $danger-color;
-    width: 19.375rem;
-    height: 4.375rem;
-    border-radius: 75px;
-    color: white;
-    font-size: 1.375rem;
-    font-weight: 500;
-    margin-top: 30px;
+    @include btn-style(4.375rem, 19.375rem, $danger-color);
   }
   &--suscribe {
-    width: 210px;
-    height: 70px;
-    border-radius: 80px;
-    background: black;
+    @include btn-style(4.375rem, 19.375rem, $btn-subscribe-color);
     color: white;
-    font-size: 16px;
-    cursor: pointer;
   }
   &:active,
   &:hover {
-    background-color: green;
+    background-color: $btn-active-color;
   }
 }
